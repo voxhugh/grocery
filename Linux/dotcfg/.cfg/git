@@ -1,0 +1,16 @@
+# Git 核心别名
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gchk='git checkout'
+alias gb='git branch'
+alias gd='git diff'
+alias gl='git log --oneline --graph -n 20'
+alias gp='git push'
+alias gpl='git pull'
+
+# Git 实用函数
+gpush() { git push origin "$(git branch --show-current)"; }
+gac() { git add . && git commit -m "$1"; }
+gacp() { git add . && git commit -m "$1" && git push; }
+gca() { git commit --amend -m "$1"; }

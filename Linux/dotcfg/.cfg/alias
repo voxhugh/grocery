@@ -1,0 +1,23 @@
+# 系统命令
+alias ll='ls -alFh'
+alias lt='ls -alFhtr'      # 按时间排序
+alias df='df -h'
+alias du='du -h'
+alias free='free -h'
+alias source='sc'
+
+# 导航
+alias ..='cd ..'
+
+# 编辑器
+alias v='vim'
+alias vi='vim'
+alias vimrc='vim ~/.vimrc'
+
+# 网络
+alias myip='curl ifconfig.me'
+
+# 开发
+alias g='git'
+alias d='docker'
+alias k='kubectl'
