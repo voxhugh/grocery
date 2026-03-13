@@ -1,29 +1,29 @@
-# 系统命令
+# system
 alias ll='ls -alFh'
-alias lt='ls -alFhtr'      # 按时间排序
+alias lt='ls -alFhtr'
 alias df='df -h'
 alias du='du -h'
 alias free='free -h'
 alias source='sc'
 
-# 导航
+# navi
 alias ..='cd ..'
 alias ...='cd ../..'
 
-# 编辑器
+# edit
 alias v='vim'
 alias vi='vim'
 alias vimrc='vim ~/.vimrc'
 
-# 网络
+# net
 alias myip='curl ifconfig.me'
 
-# 开发
+# dev
 alias g='git'
 alias d='docker'
 alias k='kubectl'
 
-# --------- shortcuts --------------
+# -------------- shortcuts --------------
 # Ctrl+A: line ahead
 # Ctrl+E: line end
 # Ctrl+U: delete before
@@ -31,5 +31,6 @@ alias k='kubectl'
 # Ctrl+L: clear
 # Ctrl+C: cancel
 # Ctrl+D: exit
-# Ctrl+Shift+C: copy
-# Ctrl+Shift+V: paste
+# -------------- other tips --------------
+# Select to copy, middle-click to paste.
+# Double-click word, triple-click line.

@@ -1,15 +1,15 @@
-# 目录操作
+# directory
 mkcd() { mkdir -p "$1" && cd "$1"; }
 
-# 文件查找
+# find
 ff() { find . -type f -name "*$1*" 2>/dev/null; }
 fd() { find . -type d -name "*$1*" 2>/dev/null; }
 
-# 系统信息
+# system info
 memusage() { ps aux | awk '{print $6/1024 " MB\t" $11}' | sort -n; }
 cpuusage() { ps aux | awk '{print $3 "%\t" $11}' | sort -nr; }
 
-# 压缩解压
+# extract
 extract() {
     case "$1" in
         *.tar.gz)  tar xzf "$1" ;;
@@ -19,11 +19,11 @@ extract() {
     esac
 }
 
-# 进程管理
+# process
 pkill() { 
     local pid=$(ps aux | grep -i "$1" | grep -v grep | awk '{print $2}')
     [ -n "$pid" ] && kill -9 "$pid" && echo "已杀死进程: $pid" || echo "未找到进程: $1"
 }
 
-# 文件大小统计
+# statistics
 ds() { du -h --max-depth=1 "${1:-.}" | sort -h; }
