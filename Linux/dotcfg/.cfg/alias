@@ -8,6 +8,7 @@ alias source='sc'
 
 # 导航
 alias ..='cd ..'
+alias ...='cd ../..'
 
 # 编辑器
 alias v='vim'
@@ -21,3 +22,14 @@ alias myip='curl ifconfig.me'
 alias g='git'
 alias d='docker'
 alias k='kubectl'
+
+# --------- shortcuts --------------
+# Ctrl+A: line ahead
+# Ctrl+E: line end
+# Ctrl+U: delete before
+# Ctrl+K: delete after
+# Ctrl+L: clear
+# Ctrl+C: cancel
+# Ctrl+D: exit
+# Ctrl+Shift+C: copy
+# Ctrl+Shift+V: paste
