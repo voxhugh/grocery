@@ -1,17 +1,14 @@
 #!/bin/bash
 
-# 代理IP 
 read -p "IP : " IP
 PORT=7890
 
-# 备份
 old_proxies=(
     "$http_proxy"
     "$https_proxy"
     "$all_proxy"
 )
 
-# 代理
 export http_proxy="http://$IP:$PORT"
 export https_proxy="http://$IP:$PORT"
 export all_proxy="socks5://$IP:$PORT"
@@ -25,10 +22,9 @@ sites=(
     "https://www.youtube.com"
 )
 
-# 测试
 for site in "${sites[@]}"; do
     if ! test_proxy "$site"; then
-        echo "Fail: $site，回滚配置..."
+        echo "Fail: $site，roll back..."
         export http_proxy="${old_proxies[0]}"
         export https_proxy="${old_proxies[1]}"
         export all_proxy="${old_proxies[2]}"
@@ -37,4 +33,4 @@ for site in "${sites[@]}"; do
     echo "OK: $site"
 done
 
-echo "代理已生效"    
+echo "success"    

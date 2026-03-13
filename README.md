@@ -1,9 +1,15 @@
-<h1 align='center'>gadgets</h1>
+<h2 align='center'>Refrigerating the small gadgets self-encap.</h2>
 
+```apl
+.
+├── config
+│   └── unix
+└── scripts
+    ├── ps
+    │   └── AutoSwitchTheme.ps1
+    ├── py
+    │   └── ecolors.py
+    └── sh
+        └── temp_proxy.sh
+```
 
-
-- `AutoSwitchTheme.ps1`: auto switch system theme at sunrise sunset.
-
-- `TempProxy.sh`: set up a temporary proxy.
-
-- `dotcfg`: all configs are elegantly loaded.
