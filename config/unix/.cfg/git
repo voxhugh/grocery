@@ -9,6 +9,7 @@ alias gp='git push'
 alias gpl='git pull'
 alias gcl='git clone'
 alias grst='git reset'
+alias grb='git rebase -i'
 
 gpush() { git push origin "$(git branch --show-current)"; }
 gac() { git add . && git commit -m "$1"; }

@@ -4,7 +4,7 @@ alias lt='ls -alFhtr'
 alias df='df -h'
 alias du='du -h'
 alias free='free -h'
-alias source='sc'
+alias grep='grep --color=auto'
 
 # navi
 alias ..='cd ..'
@@ -23,14 +23,5 @@ alias g='git'
 alias d='docker'
 alias k='kubectl'
 
-# -------------- shortcuts --------------
-# Ctrl+A: line ahead
-# Ctrl+E: line end
-# Ctrl+U: delete before
-# Ctrl+K: delete after
-# Ctrl+L: clear
-# Ctrl+C: cancel
-# Ctrl+D: exit
-# -------------- other tips --------------
-# Select to copy, middle-click to paste.
-# Double-click word, triple-click line.
+#etc
+alias sc='source ~/.bashrc'
