@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+; 原始默认值
+; "hilight"="0 120 215"
+; "HotTrackingColor"="0 102 204"
+
+; 当前生效
+"hilight"="250 105 175"
+"HotTrackingColor"="255 142 205"

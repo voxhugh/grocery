@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+; ============================================================
+; 延长 Windows 更新暂停时间至 50 年（18250 天）
+; 路径：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings
+; 值名：FlightSettingsMaxPauseDays (DWORD)
+; ============================================================
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"FlightSettingsMaxPauseDays"=dword:0000472a
+
+; ============================================================
+; 如需还原，请解开以下并重新运行本脚本
+; ============================================================
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+; "FlightSettingsMaxPauseDays"=-
