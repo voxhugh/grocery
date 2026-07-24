@@ -1,15 +1,30 @@
-<h2 align='center'>Refrigerating the small gadgets self-encap.</h2>
-
-```apl
+```bash
 .
+├── README.md
 ├── config
-│   └── unix
+│   ├── unix
+│   │   ├── cfg
+│   │   │   ├── alias
+│   │   │   ├── env
+│   │   │   ├── func
+│   │   │   └── git
+│   │   └── vimrc
+│   └── windows
+│       └── wsl
+│           ├── 4wsl-settings.json
+│           └── WSL.lnk
 └── scripts
+    ├── bat
+    │   ├── XboxGameBarSwitch.bat
+    │   └── 修复系统默认设置.bat
     ├── ps
     │   └── AutoSwitchTheme.ps1
     ├── py
-    │   └── ecolors.py
-    └── sh
-        └── temp_proxy.sh
-```
+    │   ├── ecolors.py
+    │   └── proxy_test.py
+    └── reg
+        ├── SelectedAndHoverColors.reg
+        └── extendWinUpdate.reg
 
+11 directories, 15 files
+```

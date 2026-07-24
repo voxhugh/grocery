@@ -1,0 +1,53 @@
+" Lines, spaces, indents
+set number
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set smartindent
+set backspace=indent,eol,start
+
+" UX
+set showmatch
+set ruler
+set wildmenu
+set history=1000
+set mouse=a
+
+" Search
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+" UI
+syntax on
+colorscheme desert
+set laststatus=2
+set statusline=%F%m%r%h%w\ [%Y]\ [%{&ff}]\ [%{&fenc}]\ %=line:%l/%L\ col:%c\ (%p%%)
+set cursorline
+
+" Encoding
+set encoding=utf-8
+set fileencodings=utf-8,gbk,gb2312,gb18030
+
+" Restore cursor position
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
+" Visual * / #: search selected text
+vnoremap * "vy/<C-R>v<CR>
+vnoremap # "vy?<C-R>v<CR>
+
+" Tabs
+nnoremap <C-n> :tabnew<CR>
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+
+" Font zoom (terminal passthrough)
+nnoremap <C-Up> <C-+>
+nnoremap <C-Down> <C-->
+
+" Select all
+nnoremap <C-a> ggVG

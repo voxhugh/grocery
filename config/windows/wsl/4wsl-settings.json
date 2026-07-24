@@ -1,0 +1,135 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "Terminal.CopyToClipboard",
+            "name": "Copy"
+        },
+        {
+            "command": "paste",
+            "id": "Terminal.PasteFromClipboard",
+            "name": "Paste"
+        },
+        {
+            "command": "find",
+            "id": "Terminal.FindText",
+            "name": "Find"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto"
+            },
+            "id": "Terminal.DuplicatePaneAuto",
+            "name": "Duplicate pane"
+        },
+        {
+            "command": "newTab",
+            "id": "Terminal.NewTab",
+            "name": "New tab"
+        },
+        {
+            "command": "newWindow",
+            "id": "Terminal.NewWindow",
+            "name": "New window"
+        },
+        {
+            "command": "prevTab",
+            "id": "Terminal.PrevTab",
+            "name": "Previous tab"
+        },
+        {
+            "command": "nextTab",
+            "id": "Terminal.NextTab",
+            "name": "Next tab"
+        },
+        {
+            "command": "closeTab",
+            "id": "Terminal.CloseTab",
+            "name": "Close tab"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{87f16c8f-4bf9-50e1-b931-13ed741391e4}",
+    "keybindings": [
+        {
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": "Terminal.NewTab",
+            "keys": "ctrl+n"
+        },
+        {
+            "id": "Terminal.NewWindow",
+            "keys": "ctrl+shift+n"
+        },
+        {
+            "id": "Terminal.PrevTab",
+            "keys": "ctrl+left"
+        },
+        {
+            "id": "Terminal.NextTab",
+            "keys": "ctrl+right"
+        },
+        {
+            "id": "Terminal.CloseTab",
+            "keys": "ctrl+w"
+        }
+    ],
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {},
+        "list": [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{87f16c8f-4bf9-50e1-b931-13ed741391e4}",
+                "hidden": false,
+                "name": "Ubuntu-24.04",
+                "source": "Microsoft.WSL",
+                "startingDirectory": "//wsl$/Ubuntu-24.04/home/hugh"
+            }
+        ]
+    },
+    "schemes": [],
+    "themes": []
+}

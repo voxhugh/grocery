@@ -4,7 +4,10 @@ alias lt='ls -alFhtr'
 alias df='df -h'
 alias du='du -h'
 alias free='free -h'
+alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias rm='rm -i'
+alias rst='reset'
 
 # navi
 alias ..='cd ..'
@@ -22,6 +25,8 @@ alias myip='curl ifconfig.me'
 alias g='git'
 alias d='docker'
 alias k='kubectl'
+alias mk='make -j$(nproc)'
 
 #etc
 alias sc='source ~/.bashrc'
+alias aptup='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'

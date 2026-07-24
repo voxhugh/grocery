@@ -14,7 +14,7 @@ TARGETS = [
     ("YouTube", "https://www.youtube.com"),
     ("GitHub",  "https://github.com"),
     ("Twitter", "https://twitter.com"),
-    ("StackOverflow", "https://stackoverflow.com"),
+    ("Wikipedia", "https://www.wikipedia.org"),
 ]
 
 TIMEOUT = 5
